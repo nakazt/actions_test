@@ -1,4 +1,8 @@
+"""helloモジュールのテストを含むモジュール。"""
+
 from hello import hello
 
+
 def test_hello():
-    assert hello() == 4
+    """hello関数が4を返すことをテストする。"""
+    assert hello(5) == 4
