@@ -29,8 +29,10 @@ jobs:
       run: |
         python hello.py
 
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs  # デプロイするディレクトリを指定
+        uses: peaceiris/actions-gh-page@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs  # デプロイするディレクトリを指定
 
     - name: Run tests on test branch
       if: github.ref == 'refs/heads/test'
