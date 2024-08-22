@@ -11,6 +11,19 @@
 - 依存関係のキャッシュ
 - `main` ブランチへのプッシュ時に自動デプロイ
 
+## プロジェクト構造
+
+- `docs/index.html`: メインのHTMLファイル
+- `docs/styles.css`: CSSスタイルシート
+
+## スタイリング
+
+このプロジェクトでは、HTMLとCSSを分離しています：
+- `index.html`ファイルにはHTMLマークアップのみが含まれています。
+- すべてのスタイリングは`styles.css`ファイルに記述されています。
+
+この分離により、コードの管理が容易になり、再利用性が向上します。
+
 ## デプロイ先
 
 GitHub Pages: https://nakazt.github.io/actions_test/
